@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Guides - Planti</title>
+    <style>
+        /* Existing styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f5f1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #040504;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #000000;
+        }
+
+        main {
+            padding: 60px 20px;
+        }
+
+        .guide-intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .guide-intro h1 {
+            font-size: 36px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .guide-intro p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .plant-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .plant-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .plant-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .plant-card h3 {
+            font-size: 22px;
+            color: #0c0c0c;
+            margin-top: 15px;
+        }
+
+        .plant-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .upload-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .upload-section h2 {
+            font-size: 28px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .upload-section input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        .upload-section button {
+            background-color: #000000;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .upload-section button:hover {
+            background-color: #000000;
+        }
+
+        .result {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .result img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #101010;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Planti</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plant-guides.html">Plant Guides</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="guide-intro">
+            <h1>Plant Guides</h1>
+            <p>Explore our comprehensive guides on various indoor and outdoor plants. Learn how to care for them, tips for their growth, and find the perfect plants to complement your space.</p>
+        </section>
+
+        <section class="plant-grid">
+            <div class="plant-card">
+                <img src="snakeplant.jpg" alt="Snake Plant">
+                <h3>Snake Plant</h3>
+                <p>The Snake Plant is known for its air-purifying qualities and resilience, making it perfect for beginners. It requires minimal watering and thrives in indirect sunlight.</p>
+            </div>
+            <div class="plant-card">
+                <img src="Chinese Money.jpg" alt="Fiddle Leaf Fig">
+                <h3>Fiddle Leaf Fig</h3>
+                <p>A popular choice for modern interiors, the Fiddle Leaf Fig has large, glossy leaves that require bright, indirect light and moderate watering.</p>
+            </div>
+            <div class="plant-card">
+                <img src="Monstera Deliciosa.jpg" alt="Monstera Deliciosa">
+                <h3>Monstera Deliciosa</h3>
+                <p>Known as the Swiss Cheese Plant, it is admired for its unique leaf patterns. It loves a bit of humidity and moderate watering in bright, indirect light.</p>
+            </div>
+            <div class="plant-card">
+                <img src="frontimage.jpg" alt="Aloe Vera">
+                <h3>Aloe Vera</h3>
+                <p>Aloe Vera is a low-maintenance succulent that has medicinal properties. It prefers bright, indirect light and requires infrequent watering.</p>
+            </div>
+        </section>
+
+        <!-- Plant Identification Section -->
+        <section class="upload-section">
+            <h2>Identify a Plant</h2>
+            <input type="file" id="imageUpload" accept="image/*">
+            <button onclick="uploadImage()">Upload and Identify</button>
+            <div class="result" id="result">
+                <!-- Results will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Plant Care. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function uploadImage() {
+            const fileInput = document.getElementById('imageUpload');
+            const resultDiv = document.getElementById('result');
+
+            if (fileInput.files.length === 0) {
+                alert('Please select an image.');
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('image', file);
+
+            // Replace 'YOUR_BACKEND_URL' with your actual backend URL
+            fetch('YOUR_BACKEND_URL', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response data
+                resultDiv.innerHTML = `
+                    <h3>Identification Result:</h3>
+                    <p>${data.result}</p>
+                    <img src="${data.imageUrl}" alt="Identified Plant">
+                `;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                resultDiv.innerHTML = '<p>There was an error processing your request. Please try again.</p>';
+            });
+        }
+    </script>
+</body>
+</html>
